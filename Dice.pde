@@ -32,7 +32,7 @@ class Die //models one single dice cube
 	void roll()
 	{
 		//your code here
-		numDots = (int)(Math.random()*7);
+		numDots = (int)(Math.random()*6)+1;
 	
 
 	}
@@ -46,7 +46,7 @@ class Die //models one single dice cube
 		rect(myX, myY, size, size, 20);
 		fill(0);
 
-	/*	if (numDots == 1)
+		if (numDots == 1)
 		{
 			ellipse(myX+circleSize+13, myY+circleSize+12, circleSize, circleSize);
 		}
@@ -57,27 +57,36 @@ class Die //models one single dice cube
 		}
 		if (numDots ==3)
 		{
-		ellipse(myX+circleSize+3, myY+circleSize+3, circleSize/1.5, circleSize/1.5);
-		ellipse(myX+circleSize+12, myY+circleSize+11, circleSize/1.5, circleSize/1.5);
-		ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.5, circleSize/1.5);
+			ellipse(myX+circleSize+3, myY+circleSize+3, circleSize/1.3, circleSize/1.3);
+			ellipse(myX+circleSize+12, myY+circleSize+11, circleSize/1.3, circleSize/1.3);
+			ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.3, circleSize/1.3);
 		}
 		if (numDots == 4)
 		{
-		ellipse(myX+circleSize+3, myY+circleSize+3, circleSize/1.2, circleSize/1.2);
-		ellipse(myX+circleSize+21, myY+circleSize+3, circleSize/1.2, circleSize/1.2);
-		ellipse(myX+circleSize+3, myY+circleSize+21, circleSize/1.2, circleSize/1.2);
-		ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.2, circleSize/1.2);	
+			ellipse(myX+circleSize+3, myY+circleSize+3, circleSize/1.2, circleSize/1.2);
+			ellipse(myX+circleSize+21, myY+circleSize+3, circleSize/1.2, circleSize/1.2);
+			ellipse(myX+circleSize+3, myY+circleSize+21, circleSize/1.2, circleSize/1.2);
+			ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.2, circleSize/1.2);	
 		}
 		if(numDots ==5)
 		{
-	
+			ellipse(myX+circleSize+2, myY+circleSize+3, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+23, myY+circleSize+3, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+2, myY+circleSize+25, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+23, myY+circleSize+25, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+13, myY+circleSize+13, circleSize/1.4, circleSize/1.4);
 		}
-	*/
-		ellipse(myX+circleSize+3, myY+circleSize+3, circleSize/1.2, circleSize/1.2);
-		ellipse(myX+circleSize+21, myY+circleSize+3, circleSize/1.2, circleSize/1.2);
-		ellipse(myX+circleSize+3, myY+circleSize+21, circleSize/1.2, circleSize/1.2);
-		ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.2, circleSize/1.2);
-		ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.2, circleSize/1.2);
+		if (numDots == 6)
+		{
+			ellipse(myX+circleSize+2, myY+circleSize+3, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+23, myY+circleSize+3, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+2, myY+circleSize+25, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+23, myY+circleSize+25, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+2, myY+circleSize+15, circleSize/1.4, circleSize/1.4);
+			ellipse(myX+circleSize+23, myY+circleSize+15, circleSize/1.4, circleSize/1.4);
+
+		}
+
 
 	}
 }
