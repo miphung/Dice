@@ -1,5 +1,3 @@
-Die hello = new Die(200,200);
-//Die bye = new Die(300,300);
 void setup()
 {
 	size(500, 500);
@@ -8,10 +6,13 @@ void setup()
 void draw()
 {
 	//your code here
-	hello.roll(); 
-	hello.show();
-	//bye.roll();
-	//bye.show();
+	for (int x = 25;int y = 20; x <455; x = x+65; y<375; y = y +60)
+	{
+		Die more = new Die(x,200);
+		more.roll();
+		more.show();
+	}
+
 }
 void mousePressed()
 {
