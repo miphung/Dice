@@ -6,13 +6,17 @@ void setup()
 void draw()
 {
 	//your code here
-	for (int x = 25;int y = 20; x <455; x = x+65; y<375; y = y +60)
+	for (int y =25; y< 455; y+=75)
 	{
-		Die more = new Die(x,200);
-		more.roll();
-		more.show();
-	}
+		for (int x = 25;x <455; x = x+65)
+		{
+			Die more = new Die(x,y);
+			more.roll();
+			more.show();
+		}
 
+	}
+	
 }
 void mousePressed()
 {
