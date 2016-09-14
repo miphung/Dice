@@ -1,11 +1,15 @@
+PFont f;
+
 void setup()
 {
 	size(500, 500);
 	noLoop();
+	f = createFont("Arial",16,true);
 }
 void draw()
 {
 	//your code here
+	background(255);
 	int total = 0;
 	for (int y =25; y< 455; y+=75)
 	{
@@ -18,7 +22,10 @@ void draw()
 		}
 
 	}
-	System.out.print(" The total is: " + total + " ");
+	textFont(f,20);
+	fill(0);
+	text(" The total is: " + total + " ", 250, 497);
+
 }
 void mousePressed()
 {
@@ -55,20 +62,17 @@ class Die //models one single dice cube
 		if (numDots == 1)
 		{
 			ellipse(myX+circleSize+13, myY+circleSize+12, circleSize, circleSize);
-			//total++;
 		}
 		if (numDots == 2) 
 		{
 			ellipse(myX+circleSize+5, myY+circleSize+9, circleSize, circleSize);
 			ellipse(myX+circleSize+19, myY+circleSize+21, circleSize, circleSize);
-			//total+=2;
 		}
 		if (numDots ==3)
 		{
 			ellipse(myX+circleSize+3, myY+circleSize+3, circleSize/1.3, circleSize/1.3);
 			ellipse(myX+circleSize+12, myY+circleSize+11, circleSize/1.3, circleSize/1.3);
 			ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.3, circleSize/1.3);
-			//total+=3;
 		}
 		if (numDots == 4)
 		{
@@ -76,7 +80,6 @@ class Die //models one single dice cube
 			ellipse(myX+circleSize+21, myY+circleSize+3, circleSize/1.2, circleSize/1.2);
 			ellipse(myX+circleSize+3, myY+circleSize+21, circleSize/1.2, circleSize/1.2);
 			ellipse(myX+circleSize+21, myY+circleSize+21, circleSize/1.2, circleSize/1.2);	
-			//total+=4;
 		}
 		if(numDots ==5)
 		{
@@ -85,7 +88,6 @@ class Die //models one single dice cube
 			ellipse(myX+circleSize+2, myY+circleSize+25, circleSize/1.4, circleSize/1.4);
 			ellipse(myX+circleSize+23, myY+circleSize+25, circleSize/1.4, circleSize/1.4);
 			ellipse(myX+circleSize+13, myY+circleSize+13, circleSize/1.4, circleSize/1.4);
-			//total+=5;
 		}
 		if (numDots == 6)
 		{
@@ -95,7 +97,6 @@ class Die //models one single dice cube
 			ellipse(myX+circleSize+23, myY+circleSize+25, circleSize/1.4, circleSize/1.4);
 			ellipse(myX+circleSize+2, myY+circleSize+15, circleSize/1.4, circleSize/1.4);
 			ellipse(myX+circleSize+23, myY+circleSize+15, circleSize/1.4, circleSize/1.4);
-			//total+=6;
 
 		}
 
